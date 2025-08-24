@@ -1,0 +1,340 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fbfbfb;
+ }
+header{
+    grid-area: header;
+    background-color: #f3f0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+header h1{
+    color: rgb(80, 80, 79);
+}
+header img{
+    border-radius: 50%;
+    height: 48px;
+}
+
+nav{
+    grid-area: nav;
+    background:#f3f0f1;
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+aside{
+    grid-area: sidebar;
+    background: rgb(245, 234, 216);
+    padding: 1rem;
+    display: block;
+    flex-direction: column;
+}
+aside p{
+    
+}
+ main{
+    grid-area: main;
+    background-color: white;
+
+ }
+ #pagina-tes{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .testimonios div{
+    background-color: rgb(255,167,38);
+    border-radius: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+
+ }
+ .testimonios div img{
+    background-color: white;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 5px;
+
+ }
+.testimonios div p{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+ 
+#hero{
+    background-color: #e8e6e6;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#hero img{
+    width: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.encabezado{      
+    display: flex;  
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    gap: 10px;
+    margin: 0 40px 0 0;
+    padding: 10px;
+}
+
+.encabezado div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.encabezado h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;  
+}
+.encabezado div>p{
+    background-color: RGB(255, 224, 130);
+    padding: 10px;
+    border-radius: 25px;
+    color: rgb(24, 24, 24);
+    text-align: center;
+    height: 30px;
+    width: 90%;
+}
+.boton-contenedor{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.boton-contenedor button{
+    width: auto;
+    padding: 5px 15px;
+    background-color: rgb(255,167,38);
+    border-radius: 20px;
+    height: 35px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+button{
+    width: auto;
+    padding: 5px 15px;
+    background-color: rgb(255,167,38);
+    color: white;
+    border-radius: 20px;
+    border-bottom:none ;
+    cursor: pointer;   
+}
+
+#productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.a5,.a6{
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.a5 img, .a6 img{
+    height: 250px;
+    border-radius: 10px;
+}
+.a5 h2, .a6 h2{
+    color: rgb(255,167,38);
+    text-align: center;
+    font-size: 1.2rem;
+}
+.caracteristicas{
+    padding: 0 40px;
+}
+.caracteristicas p{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+#galeria{
+    margin-top: 30px;
+}
+#galeria h2{
+    font-size: 1.2rem;
+    color: rgb(59, 59, 59);
+}
+#galeria .tarjeta{
+    display: flex;
+    justify-content: space-around;
+}
+#galeria .tarjeta div{
+    background-color: white;
+    border-radius: 10px;
+    width: 230px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(242, 242, 242);
+}
+#galeria .tarjeta div img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#galeria .tarjeta div p{
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0 15px;
+    }
+#preguntas{
+    padding: 20px;
+}
+#preguntas h2{
+    font-size: 1.2rem;
+    color: rgb(59, 59, 59);
+    }
+#preguntas details{
+    background-color: rgb(242, 242, 242);
+    padding: 10px;
+    margin: 20px;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(242, 242, 242);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contacto{
+    padding: 40px;
+}
+.redes{
+    padding: 40px;
+    border-radius: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.redes a img{
+    height: 30px;
+}
+.terminos-condiciones{
+    padding: 40px;
+    border-radius: 25px;
+    height: 100%;
+    width: 300px;  
+}
+.terminos-condiciones p{
+    color: #5b5b5b;
+    font-size: 0.6rem;
+}
+.terminos-condiciones h3{
+    text-align: center;
+}
+#whatsapp a{
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+footer a{ 
+    display: flex; 
+    align-items: center; 
+}
+form{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+form input, form select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    body{
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #productos {
+        flex-direction: column;
+    }
+
+    #galeria .tarjeta {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer div {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+    footer div:last-child {
+        border-bottom: none;
+        }
+    }
